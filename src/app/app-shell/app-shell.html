@@ -1,1 +1,22 @@
-<p>app-shell works!</p>
+<div class="app-shell">
+    <header class="shell-header">
+        <h1>My App</h1>
+    </header>
+
+    <main class="shell-content">
+        <h1>Fetched Posts</h1>
+        <div class="loading-container">
+            <p>Loading posts...</p>
+            <div class="loading-spinner"></div>
+        </div>
+
+        <div class="skeleton-posts">
+            @for (item of [1,2,3,4,5]; track $index) {
+            <div class="skeleton-post">
+                <div class="skeleton-title"></div>
+                <div class="skeleton-body"></div>
+            </div>
+            }
+        </div>
+    </main>
+</div>

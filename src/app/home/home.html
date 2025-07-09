@@ -1,0 +1,10 @@
+@if (posts().length > 0) {
+  <ul>
+    @for (post of posts(); track post.id) {
+      <li style="margin-bottom: 15px; padding: 10px; border: 1px solid #eee; border-radius: 5px;">
+        <strong>{{ post.title }}</strong><br />
+        <small>{{ post.body }}</small>
+      </li>
+    }
+  </ul>
+}
